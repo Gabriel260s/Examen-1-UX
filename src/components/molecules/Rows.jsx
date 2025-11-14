@@ -1,7 +1,8 @@
+// src/components/molecules/Rows.jsx
 import MovieCard from "../atoms/MovieCard.jsx";
 import "./Rows.css";
 
-function Row({ title = "Título", movies = [] }) {
+function Row({ title = "Título", movies = [], onSelectMovie }) {
   if (!movies || movies.length === 0) return (
     <section className="row">
       <h2 className="row-title">{title}</h2>
@@ -13,7 +14,13 @@ function Row({ title = "Título", movies = [] }) {
     <section className="row">
       <h2 className="row-title">{title}</h2>
       <div className="row-cards">
-        {movies.map(m => <MovieCard key={m.id} movie={m} />)}
+        {movies.map(m => (
+          <MovieCard
+            key={m.id}
+            movie={m}
+            onClick={() => onSelectMovie?.(m)}
+          />
+        ))}
       </div>
     </section>
   );

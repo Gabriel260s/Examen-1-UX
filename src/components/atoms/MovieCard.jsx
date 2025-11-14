@@ -3,9 +3,9 @@ function MovieCard({ movie, onClick }) {
     <img
       className="movie-poster"
       src={movie.poster}
-      alt=""
+      alt={movie.title}
       onClick={onClick}
-      style={{ cursor: "pointer" }}
+      draggable="false"
     />
   );
 }

@@ -12,16 +12,12 @@ header {
   right: 0;
   height: 70px;
   padding: 0 40px;
- background-color: transparent;
+  background-color: transparent;
 
-  display: flex;
+  display: flex; 
   align-items: center;
   justify-content: space-between;
-  z-index: 1000;
-}
-
-main {
-  padding-top: 70px;  /* igual a header height */
+  z-index: 1000; 
 }
 
 .header-left {

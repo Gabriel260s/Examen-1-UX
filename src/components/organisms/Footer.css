@@ -1,0 +1,88 @@
+.site-footer {
+  background: #0f0f0f;
+  color: #b3b3b3;
+  padding: 48px 24px 32px;
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  border-top: 1px solid rgba(255,255,255,0.03);
+}
+
+.footer-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-title {
+  color: #fff;
+  font-size: 22px;
+  margin: 0 0 14px 0;
+  display: inline-block;
+}
+
+.footer-social {
+  display: flex;
+  gap: 12px;
+  margin: 12px 0 18px;
+  align-items: center;
+}
+
+/* botón circular igual que antes */
+.social-btn {
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.03);
+  height: 38px;
+  min-width: 38px;
+  padding: 8px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* img dentro del botón: recortada y centrada como un icono */
+.social-img {
+  display: block;
+  width: 18px;   /* tamaño del icono */
+  height: 18px;
+  object-fit: contain; /* mantiene proporción */
+  pointer-events: none; /* evita que la img capture clicks/focus */
+}
+
+/* foco accesible */
+.social-btn:focus { outline: 2px solid #fff; }
+
+/* links grid */
+.footer-links {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+  margin-top: 6px;
+  margin-bottom: 28px;
+}
+
+.footer-col {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.footer-col li { margin: 8px 0; }
+.footer-col a {
+  color: #8c8c8c;
+  font-size: 14px;
+  text-decoration: none;
+}
+.footer-col a:hover,
+.footer-col a:focus {
+  text-decoration: underline;
+  color: #fff;
+}
+
+/* bottom text */
+.footer-bottom {
+  border-top: 1px solid rgba(255,255,255,0.03);
+  padding-top: 18px;
+  margin-top: 8px;
+  color: #6f6f6f;
+  font-size: 12px;
+}
+

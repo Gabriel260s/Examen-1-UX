@@ -3,6 +3,8 @@ import Header from "../components/organisms/Header.jsx";
 import Row from "../components/molecules/Rows.jsx";
 import movies from "../data/movies.js";
 import Spotlight from "../components/organisms/Spotlight.jsx";
+import Footer from "../components/organisms/Footer.jsx";
+
 
 function HomePage() {
   const [selectedMovie, setSelectedMovie] = useState(movies[0] ?? null);
@@ -21,6 +23,7 @@ function HomePage() {
         <Row title="Creeremos que estos te encantaran" movies={movies} onSelectMovie={setSelectedMovie} />
 
       </main>
+      <Footer />
     </>
   );
 }

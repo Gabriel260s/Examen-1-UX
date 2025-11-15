@@ -13,7 +13,7 @@ function Header() {
   const [isScrolled, setIsScrolled] = useState(false); // es para detectar scroll
   useEffect(() => { 
     const handleScroll = () => { 
-      if (window.scrollY > 500) { // si el scroll es mayor a 500px
+      if (window.scrollY > 100) { // si el scroll es mayor a 100px
         setIsScrolled(true);
       } else {
         setIsScrolled(false);

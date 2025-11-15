@@ -13,9 +13,13 @@ function HomePage() {
       <main className="main-content">
         <Spotlight movie={selectedMovie} />
 
-        <Row title="Continuar" movies={movies} onSelectMovie={setSelectedMovie} />
+        <Row title="Continuar viendo" movies={movies} onSelectMovie={setSelectedMovie} />
         <Row title="Favoritos del público" movies={movies} onSelectMovie={setSelectedMovie} />
-        <Row title="Tendencias" movies={movies} onSelectMovie={setSelectedMovie} />
+        <Row title="Populares en tu país" movies={movies} onSelectMovie={setSelectedMovie} />
+        <Row title="Originales de Netflix" movies={movies} onSelectMovie={setSelectedMovie} />
+        <Row title="Lo nuevo en netflix" movies={movies} onSelectMovie={setSelectedMovie} />
+        <Row title="Creeremos que estos te encantaran" movies={movies} onSelectMovie={setSelectedMovie} />
+
       </main>
     </>
   );

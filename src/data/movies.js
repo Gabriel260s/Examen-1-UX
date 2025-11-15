@@ -1,12 +1,12 @@
 const movies = [
-  { id: 1, title: "Blacklist", poster: "/src/assets/poster1.jpg", description: "Un excriminal se une al FBI para capturar a los peores delincuentes del mundo." },
-  { id: 2, title: "123", poster: "/src/assets/poster1.jpg", description: "Raymond Reddington revela secretos peligrosos para resolver casos imposibles." },
-  { id: 3, title: "prueba", poster: "/src/assets/poster1.jpg", description: "Un thriller lleno de conspiraciones, traiciones y criminales internacionales." },
-  { id: 4, title: "asd", poster: "/src/assets/poster1.jpg", description: "El FBI enfrenta nuevas amenazas mientras descubre misterios del pasado." },
-  { id: 5, title: "fds", poster: "/src/assets/poster1.jpg", description: "Reddington se ve obligado a tomar decisiones arriesgadas para sobrevivir." },
-  { id: 6, title: "gfd", poster: "/src/assets/poster1.jpg", description: "Una carrera contrarreloj para detener a un peligroso enemigo oculto." },
-  { id: 7, title: "asdas", poster: "/src/assets/poster1.jpg", description: "Secretos del gobierno salen a la luz poniendo a todos en riesgo." },
-  { id: 8, title: "vxc", poster: "/src/assets/poster1.jpg", description: "Un caso conecta toda la red de criminales de la lista negra." },
+  { id: 1, title: "Breaking Bad", poster: "/src/assets/poster1.jpg", description: "" },
+  { id: 2, title: "Interstellar", poster: "/src/assets/interstellar.jpg", description: "" },
+  { id: 3, title: "Gladiador", poster: "/src/assets/gladiador.jpg", description: "" },
+  { id: 4, title: "Forrest Gump", poster: "/src/assets/forrest_gump.jpeg", description: "" },
+  { id: 5, title: "Kpop Demon Hunter", poster: "/src/assets/kpop_demon_hunter.webp", description: "" },
+  { id: 6, title: "gfd", poster: "/src/assets/proyecto_x.avif", description: "" },
+  { id: 7, title: "asdas", poster: "/src/assets/squidgame.jpeg", description: "" },
+  { id: 8, title: "vxc", poster: "/src/assets/stranger_things.jpg", description: "" },
 ];
 
 export default movies;

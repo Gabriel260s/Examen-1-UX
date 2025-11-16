@@ -1,0 +1,42 @@
+.row {
+  margin-top: 24px; 
+  padding: 0 40px;
+}
+
+.main-content {
+  padding-top: 0%;
+}
+
+.row-title {
+  color: white;
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.row-cards {
+  display: flex;
+  gap: 14px;
+  overflow-x: auto; 
+  overflow-y: visible;
+  padding-bottom: 10px; 
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+}
+
+.row-cards::-webkit-scrollbar {
+  display: none;
+}
+
+.row-cards > * {
+  flex: 0 0 auto;
+  scroll-snap-align: start;
+  position: relative;
+}
+
+.row .row-cards {
+  color: #aaa;
+  font-size: 14px;
+  align-items: center;
+  min-height: 40px;
+}

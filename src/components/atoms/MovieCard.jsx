@@ -7,7 +7,7 @@ function PortalTeaser({ rect, src, expanded }) {
   const videoRef = useRef(null);
   const attemptsRef = useRef(0);
   const maxAttempts = 6;
-  const attemptInterval = 300; 
+  const attemptInterval = 300;
   const retryTimerRef = useRef(null);
 
   useEffect(() => {
@@ -21,11 +21,11 @@ function PortalTeaser({ rect, src, expanded }) {
 
       if (!v.paused && !v.ended) return;
 
-    
+
       if (v.readyState < 3) {
         const onCan = () => {
           if (!mounted) return;
-          attemptsRef.current = 0; 
+          attemptsRef.current = 0;
           tryPlay();
         };
         v.addEventListener("canplay", onCan, { once: true });
@@ -48,18 +48,18 @@ function PortalTeaser({ rect, src, expanded }) {
     }
 
     if (expanded) {
-      
+
       try {
         v.load();
-      } catch (e) {}
+      } catch (e) { }
       attemptsRef.current = 0;
-   
+
       retryTimerRef.current = setTimeout(tryPlay, 30);
     } else {
-      
+
       try {
         v.pause();
-      } catch (e) {}
+      } catch (e) { }
       attemptsRef.current = 0;
       if (retryTimerRef.current) {
         clearTimeout(retryTimerRef.current);
@@ -85,7 +85,7 @@ function PortalTeaser({ rect, src, expanded }) {
     width: `${rect.width}px`,
     height: `${rect.height}px`,
     zIndex: 9999999,
-    pointerEvents: "none", 
+    pointerEvents: "none",
     transformOrigin: "center bottom",
     transition: "transform 320ms cubic-bezier(.2,.9,.2,1), opacity 360ms ease",
     transform: expanded ? "scale(1.6) translateY(-12px)" : "none",
@@ -117,7 +117,7 @@ export default function MovieCard({ movie, onClick }) {
   const [rect, setRect] = useState(null);
 
 
-  const hoverDelay = 180; 
+  const hoverDelay = 180;
   const leaveDelay = 80;
   const hoverTimer = useRef(null);
 
@@ -140,13 +140,13 @@ export default function MovieCard({ movie, onClick }) {
         window.removeEventListener("resize", updateRect);
       };
     } else {
-      
+
     }
   }, [expanded]);
 
   function handleMouseEnter() {
     if (hoverTimer.current) clearTimeout(hoverTimer.current);
-   
+
     if (ref.current) {
       const r = ref.current.getBoundingClientRect();
       setRect(r);
@@ -177,6 +177,14 @@ export default function MovieCard({ movie, onClick }) {
             alt={movie.title}
             draggable="false"
           />
+          {movie.progress !== undefined && (
+            <div className="progress-bar">
+              <div
+                className="progress-fill"
+                style={{ width: movie.progress + "%" }}
+              ></div>
+            </div>
+          )}
         </div>
       </div>
 

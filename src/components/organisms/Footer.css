@@ -25,7 +25,7 @@
   align-items: center;
 }
 
-/* botón circular igual que antes */
+
 .social-btn {
   background: rgba(255,255,255,0.03);
   border: 1px solid rgba(255,255,255,0.03);
@@ -39,19 +39,17 @@
   cursor: pointer;
 }
 
-/* img dentro del botón: recortada y centrada como un icono */
 .social-img {
   display: block;
-  width: 18px;   /* tamaño del icono */
+  width: 18px;  
   height: 18px;
-  object-fit: contain; /* mantiene proporción */
-  pointer-events: none; /* evita que la img capture clicks/focus */
+  object-fit: contain; 
+  pointer-events: none; 
 }
 
-/* foco accesible */
 .social-btn:focus { outline: 2px solid #fff; }
 
-/* links grid */
+
 .footer-links {
   display: grid;
   grid-template-columns: repeat(4, 1fr);

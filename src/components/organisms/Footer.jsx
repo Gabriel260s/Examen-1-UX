@@ -38,14 +38,15 @@ export default function Footer() {
           {columns.map((col, i) => ( 
             <ul key={i} className="footer-col" aria-label={`Columna ${i + 1}`}> 
               {col.map((link, idx) => ( 
-                <li key={idx}><a href="#" onClick={(e)=>e.preventDefault()}>{link}</a></li>/* prevenir navegación real */
+                <li key={idx}><a href="#" onClick={(e)=>e.preventDefault()}>{link}</a></li>
               ))}
+              
             </ul>
           ))}
         </div>
 
         <div className="footer-bottom">
-          <small>© {year} NeTfLiX — Todos los derechos reservados.</small>
+          <small>© {year} Netflix — Todos los derechos reservados.</small>
         </div>
       </div>
     </footer>

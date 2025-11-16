@@ -10,17 +10,17 @@ import './Header.css';
 import UserLogo from '../atoms/UserLogo.jsx';
 
 function Header() {
-  const [isScrolled, setIsScrolled] = useState(false); // es para detectar scroll
+  const [isScrolled, setIsScrolled] = useState(false); 
   useEffect(() => { 
     const handleScroll = () => { 
-      if (window.scrollY > 100) { // si el scroll es mayor a 100px
+      if (window.scrollY > 100) {
         setIsScrolled(true);
       } else {
         setIsScrolled(false);
       }
     };
 
-    window.addEventListener("scroll", handleScroll);// agrega el event listener
+    window.addEventListener("scroll", handleScroll);
 
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);

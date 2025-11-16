@@ -72,7 +72,7 @@ header img {
 }
 
 main {
-  padding-top: 80px;
+  padding-top: 0px;
 }
 
 .user-logo-wrapper {
@@ -96,4 +96,8 @@ main {
 header.scrolled {
   background-color: rgba(0, 0, 0, 1);
   transition: background-color 0.5s ease;
+}
+.main-content {
+  padding-top: 0;
+  margin: 0;
 }
